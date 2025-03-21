@@ -24,6 +24,8 @@ export const ACTIONS = {
         }
       }
       if(payload.digit === "0" && state.curroper === "0" )return state
+
+if(payload.digit === "." && state.curroper ==="." )return state
       if(payload.digit === "." && state.curroper.includes("."))return state
 
       return {

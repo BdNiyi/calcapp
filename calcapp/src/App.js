@@ -145,10 +145,12 @@ function formOp(operand){
 <DIGGI digit="." dispatch={dispatch} />
 <DIGGI digit="0" dispatch={dispatch} />
 <button className="spantwo" onClick={()=> dispatch({ type: ACTIONS.EVALUATE })}>=</button>
-  </div>
 <div>
       <BMICalculator/>
     </div>
+
+  </div>
+
     </div>
   );
 }

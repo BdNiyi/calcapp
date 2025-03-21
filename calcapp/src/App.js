@@ -2,6 +2,7 @@ import './App.css';
 import {useReducer} from 'react';
 import  DIGGI from './diggi';
 import OperBtn from './operrabtn';
+import BMICalculator from './bmicalc';
 
 
 export const ACTIONS = {
@@ -120,6 +121,7 @@ function formOp(operand){
     const [{curroper,prevoper, operation}, dispatch] = useReducer(reducer,{})
 
   return (
+    <div>
     <div className="calculator-grid">
 <div className= "output">
   <div className="prevoper">{formOp(prevoper)} {operation}</div>
@@ -143,8 +145,10 @@ function formOp(operand){
 <DIGGI digit="." dispatch={dispatch} />
 <DIGGI digit="0" dispatch={dispatch} />
 <button className="spantwo" onClick={()=> dispatch({ type: ACTIONS.EVALUATE })}>=</button>
-
-
+  </div>
+<div>
+      <BMICalculator/>
+    </div>
     </div>
   );
 }

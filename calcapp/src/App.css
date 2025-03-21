@@ -53,3 +53,73 @@ font-size: 1.5rem;
     color: whitesmoke;
     font-size: 2.5rem;
 }
+
+/*BMI CALCULATOR*/
+ 
+  .bmi-container {
+    background: white;
+    max-Width: "400px";
+    padding: 40px;
+    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-left:815px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 388px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  .both-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+  }
+  .input-group {
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 50%;
+    padding: 15px;
+    height: 75%;
+    margin-left: 5px;
+    border: 1px solid #031a08de;
+    border-radius: 15px;
+  }
+  
+.calc {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  
+  .calc:hover {
+    background-color: #218838;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 25px;
+    color : #031a08de;
+  }
+  
